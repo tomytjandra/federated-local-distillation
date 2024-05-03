@@ -1,0 +1,25 @@
+---
+
+client_models_folder: models/client
+batch_size: 64
+test_ratio: 0.2
+num_rounds: 10
+
+model_type: fbccnn
+seed: 1
+
+config_fit:
+  mode: offline
+  lr: 0.00001
+  #weight_decay: 0.0
+  local_epochs: 1
+  temperature: 1
+  alpha: 0
+
+
+# config_model:
+#   _target_: model.SimpleViT
+#   in_channels: 4  # 12 if de_topomap
+#   grid_size: [9, 9]
+#   num_classes: 3
+#   dropout: 0.0
